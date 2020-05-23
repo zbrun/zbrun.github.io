@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的博客 | 张泽兵的小窝</title>
+  <title>c++学习笔记Ⅱ | 张泽兵的小窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎大家来到我的博客 通过这个博客我将记录我的学习、生活，分享有趣的事情，有用的经验和资源。也欢迎大家与我讨论。个人QQ:1170647565">
+  <meta name="description" content="迭代器  123456789&#x2F;&#x2F;注意要加入vector的头文件#include&lt;vector&gt;    vector&lt;int&gt;vecint&#x3D;&amp;#123;&amp;#125;;&#x2F;&#x2F;定义一个vector的向量类型    &#x2F;&#x2F;再py中的意思为实例化一个类，例如：vecint&#x3D;vector()    vector&lt;int&gt;::iterator it;&#x2F;&#x2F;得到迭代对象it    f">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="http://yoursite.com/2020/05/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="c++学习笔记Ⅱ">
+<meta property="og:url" content="http://yoursite.com/2020/05/23/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%85%A1/index.html">
 <meta property="og:site_name" content="张泽兵的小窝">
-<meta property="og:description" content="欢迎大家来到我的博客 通过这个博客我将记录我的学习、生活，分享有趣的事情，有用的经验和资源。也欢迎大家与我讨论。个人QQ:1170647565">
+<meta property="og:description" content="迭代器  123456789&#x2F;&#x2F;注意要加入vector的头文件#include&lt;vector&gt;    vector&lt;int&gt;vecint&#x3D;&amp;#123;&amp;#125;;&#x2F;&#x2F;定义一个vector的向量类型    &#x2F;&#x2F;再py中的意思为实例化一个类，例如：vecint&#x3D;vector()    vector&lt;int&gt;::iterator it;&#x2F;&#x2F;得到迭代对象it    f">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s1.ax1x.com/2020/05/20/Y757jA.jpg">
-<meta property="article:published_time" content="2020-05-20T12:33:53.000Z">
-<meta property="article:modified_time" content="2020-05-21T00:09:21.805Z">
+<meta property="article:published_time" content="2020-05-23T06:53:43.000Z">
+<meta property="article:modified_time" content="2020-05-23T13:35:47.450Z">
 <meta property="article:author" content="张泽兵">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s1.ax1x.com/2020/05/20/Y757jA.jpg">
   
     <link rel="alternative" href="/atom.xml" title="张泽兵的小窝" type="application/atom+xml">
   
@@ -181,28 +179,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-c-学习笔记Ⅱ" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的博客
+      c++学习笔记Ⅱ
     </h1>
   
 
         
-        <a href="/2020/05/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2020-05-20T12:33:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-20</time>
+        <a href="/2020/05/23/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%85%A1/" class="archive-article-date">
+  	<time datetime="2020-05-23T06:53:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎大家来到我的博客<br><img src="https://s1.ax1x.com/2020/05/20/Y757jA.jpg" alt="图片"></p>
-<p>通过这个博客我将记录我的学习、生活，分享有趣的事情，有用的经验和资源。<br>也欢迎大家与我讨论。<br>个人QQ:1170647565</p>
+        <p>迭代器</p>
+<hr>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注意要加入vector的头文件#include&lt;vector&gt;</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;vecint=&#123;&#125;;<span class="comment">//定义一个vector的向量类型</span></span><br><span class="line">    <span class="comment">//再py中的意思为实例化一个类，例如：vecint=vector()</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator it;<span class="comment">//得到迭代对象it</span></span><br><span class="line">    <span class="keyword">for</span> (it = vecint.<span class="built_in">begin</span>(); it != vecint.<span class="built_in">end</span>(); ++it) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; *it &lt;&lt; <span class="string">' '</span>;&#125;</span><br><span class="line"><span class="comment">//这里的it不是很清楚，感觉有些像py里面的inrange(len())将其转化为数组。</span></span><br><span class="line"><span class="comment">//与指针的很像，但是感觉it是一个vector的数据类型</span></span><br><span class="line"><span class="comment">//再之后的学习中应该可以解决这个问题</span></span><br></pre></td></tr></table></figure>
+<p>指针</p>
+<hr>
+<p>指针是一个值为内存地址的变量(数据对象)<br>声明里的<em>和使用中的</em>完全不同！！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> ch=<span class="string">'a'</span>;</span><br><span class="line"><span class="keyword">char</span>* ptr_ch=&amp;ch;</span><br><span class="line"><span class="comment">//这里需要注意，编译器直接将char* 当成字符串</span></span><br><span class="line"><span class="comment">//打印地址应强制转换(viod *)ptr_ch</span></span><br><span class="line"><span class="comment">//void* 类型的指针一般用来和别的指针作比较</span></span><br><span class="line"><span class="comment">//void存放的内存地址是什么不能确定</span></span><br><span class="line"><span class="keyword">double</span>* ptr_double= <span class="literal">nullptr</span>;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;*ptr_double;</span><br><span class="line"><span class="comment">//c/c++语言中指针是比较危险的，一定记得对指针进行赋值，不能出现野指针。</span></span><br></pre></td></tr></table></figure>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>引用：为对象另外起了一个名字</p>
+<ul>
+<li>引用并非是对象，只是对象的别名</li>
+<li>引用只能绑定于对象，不能与字面或者某个表达式的计算结果绑定在一起<br>
+int& ref=10(错误)
+<br>
+const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有进行内存分配。</li>
+<li>引用其实只是指针的封装，引用会使c++代码变得漂亮<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//指针与数组</span></span><br><span class="line"><span class="keyword">double</span> sore[<span class="number">5</span>]&#123;<span class="number">9</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">324</span>&#125;;</span><br><span class="line">    <span class="keyword">double</span>* ptr_sore;</span><br><span class="line">    ptr_sore=&amp;sore[<span class="number">0</span>];</span><br><span class="line">    ptr_sore=sore;</span><br><span class="line">    <span class="comment">//当指针指向数组的时候，指针就可以当作数组使用(因为数组名就是第一个数的地址)</span></span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;<span class="keyword">sizeof</span>(ptr_sore)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;*ptr_sore++&lt;&lt;<span class="string">' '</span>;</span><br><span class="line">        <span class="comment">//指针可以灵活的访问内存</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+动态分配内存</li>
+</ul>
+<hr>
+<p>再执行到此句话时进行内存分配</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>* ptr_int=<span class="keyword">new</span> <span class="keyword">int</span>;      <span class="comment">//分配内存</span></span><br><span class="line"><span class="keyword">delete</span> ptr_int             <span class="comment">//释放内存</span></span><br><span class="line"><span class="keyword">int</span>* intArray=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>]; <span class="comment">//动态内存分配数组</span></span><br><span class="line"><span class="keyword">delete</span>[] intArray;         <span class="comment">//释放数组内存时与上面有区别</span></span><br></pre></td></tr></table></figure>
+<h2 id="栈区、堆区"><a href="#栈区、堆区" class="headerlink" title="栈区、堆区"></a>栈区、堆区</h2><ul>
+<li>栈区：编译器自动分配释放，一般存放函数的参数值，局部变量的值等</li>
+<li>堆区：由程序员分配释放，程序结束时可能有操作系统回收</li>
+</ul>
 
       
 
@@ -210,18 +230,13 @@
     </div>
     <div class="article-info article-info-index">
       
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		
 		</ul>
@@ -277,7 +292,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/23/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%85%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,18 +306,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/21/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%85%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/05/23/%E9%97%AE%E9%A2%98%E7%9A%84%E6%8F%90%E5%87%BA%E4%B8%8E%E8%A7%A3%E5%86%B3/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          c++学习笔记Ⅰ
+          问题的提出与解决
         
       </div>
     </a>
   
   
-    <a href="/2020/05/20/%E9%9A%8F%E6%97%B6%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">随时记录</div>
+    <a href="/2020/05/22/%E8%8B%B1%E8%AF%AD/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">单词</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -330,7 +345,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="我的博客" data-title="我的博客" data-url="http://yoursite.com/2020/05/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/"></div>
+	<div class="ds-thread" data-thread-key="c-学习笔记Ⅱ" data-title="c++学习笔记Ⅱ" data-url="http://yoursite.com/2020/05/23/c-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%85%A1/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -352,7 +367,7 @@
   
 
   
-  <div id="SOHUCS" sid="我的博客" ></div> 
+  <div id="SOHUCS" sid="c-学习笔记Ⅱ" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({
