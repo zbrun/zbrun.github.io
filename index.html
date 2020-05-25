@@ -336,6 +336,97 @@
 
 
   
+    <article id="post-linux学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/25/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">linux学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/25/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-05-25T00:51:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ls \    \\显示文件结构</span><br><span class="line">命令格式：命令[-选项][参数]</span><br><span class="line">ls -l []        \\长格式显示</span><br><span class="line">ls -d []        \\指定目录的详细信息</span><br><span class="line">ls -i []        \\查看目录的id</span><br><span class="line">ls -a []        \\查看隐藏文件</span><br></pre></td></tr></table></figure>
+<h2 id="目录处理命令"><a href="#目录处理命令" class="headerlink" title="目录处理命令"></a>目录处理命令</h2><p>mkdir</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir &#x2F;tmp&#x2F;test             \\在tmp文件夹下创建test母目录</span><br><span class="line">mkdir -p &#x2F;tmp&#x2F;test&#x2F;first    \\ -p用于创建多级目录</span><br></pre></td></tr></table></figure>
+<p>rmdir</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir [test]        \\只能删除空目录</span><br></pre></td></tr></table></figure>
+<p>cd</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;tmp&#x2F;test&#x2F;       \\进入目录</span><br><span class="line">cd ..               \\上级目录</span><br><span class="line">cd .                \\当前目录</span><br><span class="line">pwd                 \\完整的操作名称</span><br></pre></td></tr></table></figure>
+<p>cp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp [原目录][目标目录]</span><br><span class="line">-r 复制目录</span><br><span class="line">-p 保留原属性</span><br></pre></td></tr></table></figure>
+<p>rm、mv</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mv [原文件名][新的文件名]</span><br><span class="line">rm -rf  &#x2F;&#x2F;删除目录</span><br></pre></td></tr></table></figure>
+<h2 id="文件处理命令"><a href="#文件处理命令" class="headerlink" title="文件处理命令"></a>文件处理命令</h2><p>touch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[当前目录]$toch [文件名]</span><br><span class="line">touch &#x2F;路径&#x2F;[文件名]</span><br></pre></td></tr></table></figure>
+<p>cat</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat []   &#x2F;&#x2F;浏览文件</span><br><span class="line">tac []   &#x2F;&#x2F;倒着显示</span><br></pre></td></tr></table></figure>
+<p>more</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">more[]   &#x2F;&#x2F;不完全显示文件</span><br><span class="line">less[]   &#x2F;&#x2F;比more更强大</span><br><span class="line">head -n [] &#x2F;&#x2F;前几行</span><br><span class="line">tail -n [] &#x2F;&#x2F;后几行</span><br></pre></td></tr></table></figure>
+<h2 id="链接命令"><a href="#链接命令" class="headerlink" title="链接命令"></a>链接命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s [原文件][新文件]  &#x2F;&#x2F;软连接</span><br><span class="line">ln [原文件][新文件]     &#x2F;&#x2F;硬链接</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/25/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-问题的提出与解决" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -708,6 +799,8 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 <p>2020/5/23</p>
 <hr>
 <p>c++的指针和c的指针不一样吗，感觉有点懵。是书本打印错误？？</p>
+<hr>
+<h2 id="2020-5-24"><a href="#2020-5-24" class="headerlink" title="2020/5/24"></a>2020/5/24</h2><p>明天考试CAD有一点点慌呢！！！</p>
 
       
 
@@ -934,7 +1027,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -942,7 +1043,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -951,10 +1052,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">问题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
