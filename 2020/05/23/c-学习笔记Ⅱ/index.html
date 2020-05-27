@@ -16,7 +16,7 @@
 <meta property="og:description" content="迭代器  123456789&#x2F;&#x2F;注意要加入vector的头文件#include&lt;vector&gt;    vector&lt;int&gt;vecint&#x3D;&amp;#123;&amp;#125;;&#x2F;&#x2F;定义一个vector的向量类型    &#x2F;&#x2F;再py中的意思为实例化一个类，例如：vecint&#x3D;vector()    vector&lt;int&gt;::iterator it;&#x2F;&#x2F;得到迭代对象it    f">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-23T06:53:43.000Z">
-<meta property="article:modified_time" content="2020-05-24T06:21:32.555Z">
+<meta property="article:modified_time" content="2020-05-27T04:19:21.696Z">
 <meta property="article:author" content="张泽兵">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -223,6 +223,11 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 <li>栈区：编译器自动分配释放，一般存放函数的参数值，局部变量的值等</li>
 <li>堆区：由程序员分配释放，程序结束时可能有操作系统回收</li>
 </ul>
+<hr>
+<h2 id="函数参数的传递"><a href="#函数参数的传递" class="headerlink" title="函数参数的传递"></a>函数参数的传递</h2><p>&amp;加入引用符号，与普通的传递参数不一样。<br>如果不加&amp;相当于，复制一份传进去。加入&amp;则表示将地址（及本元素传进去）</p>
+<pre><code class="c++"><span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> valueArray[],<span class="keyword">int</span> len)</span>  <span class="comment">//这样传递数组可以保护数组不被修改</span></span>
+<span class="function"></span>
+<span class="function"></span></code></pre>
 
       
 
@@ -473,14 +478,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
@@ -489,7 +486,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -497,11 +494,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">问题</a>
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">问题</a>
               </li>
             
             <div class="clearfix"></div>

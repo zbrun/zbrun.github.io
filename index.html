@@ -336,6 +336,79 @@
 
 
   
+    <article id="post-红黑树" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/26/%E7%BA%A2%E9%BB%91%E6%A0%91/">红黑树</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/26/%E7%BA%A2%E9%BB%91%E6%A0%91/" class="archive-article-date">
+  	<time datetime="2020-05-26T06:43:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="红黑树的几个性质"><a href="#红黑树的几个性质" class="headerlink" title="红黑树的几个性质"></a>红黑树的几个性质</h2><h2 id="红黑树的左旋，右旋"><a href="#红黑树的左旋，右旋" class="headerlink" title="红黑树的左旋，右旋"></a>红黑树的左旋，右旋</h2><h2 id="红黑树的变色"><a href="#红黑树的变色" class="headerlink" title="红黑树的变色"></a>红黑树的变色</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/26/%E7%BA%A2%E9%BB%91%E6%A0%91/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-linux学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -374,6 +447,7 @@
 <p>more</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">more[]   &#x2F;&#x2F;不完全显示文件</span><br><span class="line">less[]   &#x2F;&#x2F;比more更强大</span><br><span class="line">head -n [] &#x2F;&#x2F;前几行</span><br><span class="line">tail -n [] &#x2F;&#x2F;后几行</span><br></pre></td></tr></table></figure>
 <h2 id="链接命令"><a href="#链接命令" class="headerlink" title="链接命令"></a>链接命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s [原文件][新文件]  &#x2F;&#x2F;软连接</span><br><span class="line">ln [原文件][新文件]     &#x2F;&#x2F;硬链接</span><br></pre></td></tr></table></figure>
+<h2 id="权限管理命令chmod"><a href="#权限管理命令chmod" class="headerlink" title="权限管理命令chmod"></a>权限管理命令chmod</h2><p>change the permissions mode of a file<br>r,w,x            //读、写、执行<br>chamod[{ugoa}{+=-}{rwx}]     //ugo 所有者、所属组、其他人、所有<br>      [532]                     //r-&gt;4   w-&gt;2  x-&gt;1 数字和rx的转换</p>
 
       
 
@@ -549,6 +623,11 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 <li>栈区：编译器自动分配释放，一般存放函数的参数值，局部变量的值等</li>
 <li>堆区：由程序员分配释放，程序结束时可能有操作系统回收</li>
 </ul>
+<hr>
+<h2 id="函数参数的传递"><a href="#函数参数的传递" class="headerlink" title="函数参数的传递"></a>函数参数的传递</h2><p>&amp;加入引用符号，与普通的传递参数不一样。<br>如果不加&amp;相当于，复制一份传进去。加入&amp;则表示将地址（及本元素传进去）</p>
+<pre><code class="c++"><span class="function"><span class="keyword">void</span> <span class="title">show</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> valueArray[],<span class="keyword">int</span> len)</span>  <span class="comment">//这样传递数组可以保护数组不被修改</span></span>
+<span class="function"></span>
+<span class="function"></span></code></pre>
 
       
 
@@ -630,6 +709,7 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 - default         违约
 - array           数组
 - vector          矢量
+- permitted       允许，使用
 
 </code></pre>
       
@@ -796,11 +876,11 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 <hr>
 <h2 id="2020-5-21-1"><a href="#2020-5-21-1" class="headerlink" title="2020/5/21"></a>2020/5/21</h2><p>有点找不到方向是吧，<br><br>不要着急，一步一步来。<br><br><img src="https://s1.ax1x.com/2020/05/21/YHz8Df.gif" alt="YHz8Df.gif"></p>
 <hr>
-<p>2020/5/23</p>
-<hr>
-<p>c++的指针和c的指针不一样吗，感觉有点懵。是书本打印错误？？</p>
+<h2 id="2020-5-23"><a href="#2020-5-23" class="headerlink" title="2020/5/23"></a>2020/5/23</h2><p>c++的指针和c的指针不一样吗，感觉有点懵。是书本打印错误？？</p>
 <hr>
 <h2 id="2020-5-24"><a href="#2020-5-24" class="headerlink" title="2020/5/24"></a>2020/5/24</h2><p>明天考试CAD有一点点慌呢！！！</p>
+<hr>
+<h2 id="2020-5-26"><a href="#2020-5-26" class="headerlink" title="2020/5/26"></a>2020/5/26</h2><p>今天有点迷呀宝贝！！链表实现出来？ </p>
 
       
 
@@ -854,19 +934,19 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 
 
   
-    <article id="post-数据结构与算法-第一节" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-数据结构与算法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%B8%80%E8%8A%82/">数据结构与算法</a>
+      <a class="article-title" href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a>
     </h1>
   
 
         
-        <a href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%B8%80%E8%8A%82/" class="archive-article-date">
+        <a href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="archive-article-date">
   	<time datetime="2020-05-20T11:18:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-20</time>
 </a>
         
@@ -876,12 +956,7 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
       
         <h2 id="fib序列"><a href="#fib序列" class="headerlink" title="fib序列"></a>fib序列</h2><p>也可以看作上楼梯问题</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//迭代算法</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">()</span></span>&#123; </span><br><span class="line"><span class="comment">//f,g分别记忆当前所处的信息，然后迭代</span></span><br><span class="line"><span class="keyword">int</span> g=<span class="number">0</span>,f=<span class="number">1</span>,n;</span><br><span class="line"><span class="comment">//1，2，3假设三个方框</span></span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n,i++)&#123;</span><br><span class="line"><span class="comment">//3等于1+2</span></span><br><span class="line">    f=f+g;</span><br><span class="line"><span class="comment">//2等于3-1</span></span><br><span class="line">    g=f-g;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="向量（vector）数组"><a href="#向量（vector）数组" class="headerlink" title="向量（vector）数组"></a>向量（vector）<code>数组</code></h2><ul>
-<li>抽象数据类型<br></li>
-<li>数据结构</li>
-<li>接口</li>
-</ul>
-
+<h2 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h2>
       
 
       
@@ -904,7 +979,7 @@ const int& ref=10(正确)<br>这里也可以得到解释了，因为常量没有
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E7%AC%AC%E4%B8%80%E8%8A%82/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/20/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">展开全文 >></a>
         </p>
       
 
@@ -1027,14 +1102,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
@@ -1043,7 +1110,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1051,11 +1118,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">问题</a>
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">问题</a>
               </li>
             
             <div class="clearfix"></div>
